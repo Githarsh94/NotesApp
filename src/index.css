@@ -11,3 +11,183 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* General container style */
+.pyara-div {
+  display: flex;
+  /* Use flexbox for layout */
+  justify-content: space-between;
+  /* Space between the left and right sections */
+  align-items: center;
+  /* Vertically align items */
+  padding: 10px;
+  /* Add padding for space */
+  margin-bottom: 10px;
+  /* Add margin between each element */
+  border: 1px solid #ddd;
+  /* Border around the div */
+  border-radius: 8px;
+  /* Rounded corners */
+  background-color: #f9f9f9;
+  /* Light background color */
+  transition: background-color 0.3s;
+  /* Smooth transition on hover */
+}
+
+.pyara-div:hover {
+  background-color: #f1f1f1;
+  /* Change background on hover */
+}
+
+/* Left section styling */
+.left-section {
+  display: flex;
+  /* Flexbox layout for alignment */
+  flex-direction: column;
+  /* Stack title and time vertically */
+}
+
+.title {
+  font-weight: bold;
+  /* Make title bold */
+  font-size: 1.2rem;
+  /* Larger font size for title */
+  color: #333;
+  /* Dark color for title */
+}
+
+.time {
+  font-size: 0.9rem;
+  /* Smaller font size for time */
+  color: #777;
+  /* Lighter color for time */
+}
+
+/* Right section styling */
+.right-section {
+  display: flex;
+  /* Flexbox layout */
+}
+
+.delete-button {
+  background-color: #ff4d4d;
+  /* Red background for delete button */
+  color: #fff;
+  /* White text color */
+  border: none;
+  /* Remove default button border */
+  padding: 8px 12px;
+  /* Padding inside the button */
+  border-radius: 5px;
+  /* Rounded corners */
+  cursor: pointer;
+  /* Change cursor to pointer on hover */
+  transition: background-color 0.3s;
+  /* Smooth transition for background color */
+}
+
+.delete-button:hover {
+  background-color: #e60000;
+  /* Darker red on hover */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f5f5f5;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.header-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.header-plus-button {
+  font-size: 20px;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.header-plus-button:hover {
+  background-color: #0056b3;
+}
+
+
+/* AddNoteForm CSS */
+.add-note-form {
+  max-width: 400px;
+  /* Adjust the width as needed */
+  padding: 10px;
+  border: 1px solid #ccc;
+  /* Border style */
+  border-radius: 5px;
+  /* Rounded corners */
+  background-color: #f9f9f9;
+  /* Background color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Box shadow for depth */
+  margin: 20px auto;
+  /* Center the form */
+}
+
+.add-note-form input,
+.add-note-form textarea {
+  width: 100%;
+  /* Make inputs full width */
+  padding: 8px;
+  /* Add padding inside the inputs */
+  margin-bottom: 10px;
+  /* Add spacing between inputs */
+  border: 1px solid #ccc;
+  /* Border style */
+  border-radius: 5px;
+  /* Rounded corners */
+  box-sizing: border-box;
+  /* Include padding and border in width */
+}
+
+.button-container {
+  display: flex;
+  /* Use flexbox for buttons */
+  justify-content: space-between;
+  /* Space between buttons */
+}
+
+.save-button,
+.cancel-button {
+  padding: 8px 12px;
+  /* Button padding */
+  border: none;
+  /* Remove border */
+  border-radius: 5px;
+  /* Rounded corners */
+  cursor: pointer;
+  /* Pointer cursor on hover */
+}
+
+.save-button {
+  background-color: #4CAF50;
+  /* Green background for save button */
+  color: white;
+  /* White text color */
+}
+
+.cancel-button {
+  background-color: #f44336;
+  /* Red background for cancel button */
+  color: white;
+  /* White text color */
+}
+
+.save-button:hover,
+.cancel-button:hover {
+  opacity: 0.9;
+  /* Slightly darken on hover */
+}
